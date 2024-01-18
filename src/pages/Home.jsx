@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import OurProperty from '../components/OurProperty';
 import OurServices from '../components/OurServices';
 import Video from '../components/Video';
+import WorkingProcess from '../components/WorkingProcess';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <FindMore />
             <OurProperty />
             <FindProperties />
+            <WorkingProcess />
         </div>
     );
 };
