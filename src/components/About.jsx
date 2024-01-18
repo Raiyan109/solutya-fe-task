@@ -3,7 +3,7 @@ import tickImg from '../assets/tick vector about.png'
 
 const About = () => {
     return (
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center mx-auto container px-96'>
             <div className='flex-1'>
                 <img src={aboutImg} alt="" className='w-80 h-80 object-contain' />
             </div>
