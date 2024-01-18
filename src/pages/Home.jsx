@@ -1,3 +1,4 @@
+import Browse from '../components/Browse';
 import Hero from '../components/Hero';
 import Nav2 from '../components/Nav2';
 import Navbar from '../components/Navbar';
@@ -8,6 +9,7 @@ const Home = () => {
             <Navbar />
             <Nav2 />
             <Hero />
+            <Browse />
         </div>
     );
 };
