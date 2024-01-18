@@ -4,6 +4,7 @@ import FindMore from '../components/FindMore';
 import Hero from '../components/Hero';
 import Nav2 from '../components/Nav2';
 import Navbar from '../components/Navbar';
+import OurProperty from '../components/OurProperty';
 import OurServices from '../components/OurServices';
 import Video from '../components/Video';
 
@@ -16,8 +17,9 @@ const Home = () => {
             {/* <Browse /> */}
             <About />
             <OurServices />
-            <FindMore />
             <Video />
+            <FindMore />
+            <OurProperty />
         </div>
     );
 };
