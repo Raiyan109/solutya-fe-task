@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import Nav2 from '../components/Nav2';
 import Navbar from '../components/Navbar';
 import OurServices from '../components/OurServices';
+import Video from '../components/Video';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <About />
             <OurServices />
             <FindMore />
+            <Video />
         </div>
     );
 };
