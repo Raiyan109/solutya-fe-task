@@ -4,6 +4,7 @@ import FindMore from '../components/FindMore';
 import Hero from '../components/Hero';
 import Nav2 from '../components/Nav2';
 import Navbar from '../components/Navbar';
+import OurServices from '../components/OurServices';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Hero />
             <Browse />
             <About />
+            <OurServices />
             <FindMore />
         </div>
     );
