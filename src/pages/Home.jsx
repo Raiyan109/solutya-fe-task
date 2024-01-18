@@ -1,3 +1,4 @@
+import About from '../components/About';
 import Browse from '../components/Browse';
 import Hero from '../components/Hero';
 import Nav2 from '../components/Nav2';
@@ -10,6 +11,7 @@ const Home = () => {
             <Nav2 />
             <Hero />
             <Browse />
+            <About />
         </div>
     );
 };
