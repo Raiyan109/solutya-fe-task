@@ -1,3 +1,4 @@
+import Hero from '../components/Hero';
 import Nav2 from '../components/Nav2';
 import Navbar from '../components/Navbar';
 
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Navbar />
             <Nav2 />
+            <Hero />
         </div>
     );
 };
