@@ -16,7 +16,7 @@ const Blogs = () => {
             id: 1,
             image: img1,
             name: "7 Home Trends That will Shape Your House",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            desc: "Duis aute irure dolor in reprehenderit into volupjl tate velit esse cillum dolore eu fugiat nulla partr iatur sunt in culp qui officia deserunt mollit",
             date: '05 Dec 2022',
             views: 1000,
             comments: 12,
@@ -26,8 +26,8 @@ const Blogs = () => {
         {
             id: 2,
             image: img2,
-            name: "Ready Resort for Sell",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            name: "Renovating a Living Room? Experts Share Their Secrets",
+            desc: "Duis aute irure dolor in reprehenderit into volupjl tate velit esse cillum dolore eu fugiat nulla partr iatur sunt in culp qui officia deserunt mollit",
             date: '05 Dec 2022',
             views: 1000,
             comments: 12,
@@ -37,8 +37,8 @@ const Blogs = () => {
         {
             id: 3,
             image: img3,
-            name: "Ready Resort for Sell",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            name: "Recent Commercial Real Estate Transactions",
+            desc: "Duis aute irure dolor in reprehenderit into volupjl tate velit esse cillum dolore eu fugiat nulla partr iatur sunt in culp qui officia deserunt mollit",
             date: '05 Dec 2022',
             views: 1000,
             comments: 12,
@@ -47,19 +47,23 @@ const Blogs = () => {
         }
     ]
     return (
-        <div>
-            <div>
-                <h1 className='text-[#010F58] text-sm font-bold'>Blogs and News</h1>
-                <img src={underline} alt="" className='' />
+        <div className='my-32 space-y-10'>
+            <div className='space-y-5 pl-[400px]'>
+                <div className='flex flex-col'>
+                    <h1 className='text-sm font-bold text-navy-blue'>Blogs & News</h1>
+                    <img src={underline} alt="" className='w-20 h-2 object-contain' />
+                </div>
+                <h1 className='text-3xl font-bold'>Our Latest Blogs and News</h1>
             </div>
-            <h1 className='text-3xl font-semibold'>Our Latest Blogs and News</h1>
 
             <div className='flex justify-center items-center'>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
                     {data.map((item) => (
-                        <div key={item.id} className='p-2 space-y-5'>
-                            <img src={item.image} alt="" />
-                            <div className='flex items-center justify-around'>
+                        <div key={item.id} className='p-5 space-y-5  shadow-lg'>
+                            <div className='flex justify-center items-center'>
+                                <img src={item.image} alt="" className='w-80 h-60' />
+                            </div>
+                            <div className='flex items-center justify-around text-sm'>
                                 <div className='flex items-center gap-1'>
                                     <img src={calender} alt="" />
                                     <h1>{item.date}</h1>
@@ -74,9 +78,9 @@ const Blogs = () => {
                                 </div>
                             </div>
                             <div>
-                                <h1 className='underline text-xl text-orange-600 '>{item.name}</h1>
+                                <h1 className='underline text-lg text-orange-600 font-semibold max-w-xs'>{item.name}</h1>
                             </div>
-                            <p className='max-w-md text-xs text-gray-600'>{item.desc}</p>
+                            <p className='max-w-xs text-xs text-gray-600'>{item.desc}</p>
                             <hr />
                             <div className='flex items-center justify-between gap-3 text-sm text-gray-600'>
                                 <div className='flex items-center gap-2'>

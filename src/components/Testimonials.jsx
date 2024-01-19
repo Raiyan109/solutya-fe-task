@@ -29,7 +29,7 @@ const Testimonials = () => {
         }
     ]
     return (
-        <div className='pt-20 pb-44  space-y-28'>
+        <div className='pt-20 pb-72 space-y-28'>
             <div className='space-y-5'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-sm font-bold text-center text-navy-blue'>Testimonials</h1>
@@ -39,12 +39,12 @@ const Testimonials = () => {
             </div>
 
             <div className='flex justify-center items-center'>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {
                         data.map(({ image, name, desc, desig, id }) => (
-                            <div key={id} className='bg-gray-100 rounded-xl shadow-lg p-4 space-y-3 relative'>
-                                <img src={image} alt="" className='absolute -top-10 w-20 h-20 -left-5' />
-                                <div className='text-orange-600 flex items-center gap-2'>
+                            <div key={id} className='bg-gray-100 rounded-xl shadow-lg p-6 space-y-3 relative'>
+                                <img src={image} alt="" className='absolute -top-9 w-20 h-20 -left-4 border-s-4 border-e-4 border-b-4 rounded-full border-white' />
+                                <div className='text-orange-600 flex items-center justify-end gap-2'>
                                     <IoStar />
                                     <IoStar />
                                     <IoStar />
