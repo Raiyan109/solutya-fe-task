@@ -13,16 +13,16 @@ const Hero = () => {
 
                 <img src={orange} alt="" className='absolute -top-[400px] left-44 z-0 h-[800px] w-[1200px]' />
                 <img src={blue} alt="" className='absolute -top-[400px] left-40 z-20 h-[800px] w-[1200px]' />
-                <div className='absolute z-20 left-44 -top-56 space-y-8'>
+                <div className='absolute z-20 left-72 -top-56 space-y-8'>
                     <h1 className='text-5xl text-white max-w-sm leading-tight'>Discover More Suitable Property</h1>
                     <p className='text-sm text-white/95 max-w-md'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sit ad, accusantium mollitia nulla beatae officiis </p>
                     <div>
-                        <div className='bg-orange-600 px-4 pb-3 flex gap-3 w-1/2'>
+                        <div className='bg-orange-600 px-4 pb-3 flex gap-3 w-1/4'>
                             <div className='text-white py-1 '>Sell</div>
                             <div className='bg-white text-orange-600 rounded-b py-1 px-1 font-medium'>Rent</div>
                             <div className='text-white py-1 '>Buy</div>
                         </div>
-                        <div className='bg-orange-600 px-4 pb-3 flex gap-3'>
+                        <div className='bg-orange-600 px-4 py-3 flex gap-3 w-[880px]'>
                             <div className='relative space-y-1'>
                                 <span className='text-white/90'>Type</span>
 
@@ -95,7 +95,7 @@ const Hero = () => {
                                     </button>
                                 </span>
                             </div>
-                            <div className='relative'>
+                            <div className='relative top-5'>
                                 <input
                                     type="text"
                                     id="Search"
