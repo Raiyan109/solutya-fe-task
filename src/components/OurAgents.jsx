@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import '../styles/ourAgents.css'
+
 const OurAgents = () => {
     return (
         <div>
@@ -14,9 +16,15 @@ const OurAgents = () => {
                 <img src={underline} alt="" className='' />
             </div>
             <h1 className='text-3xl font-semibold text-center'>Meet Our Agents</h1>
+            <div id="containerForBullets"></div>
             <Swiper
                 pagination={{
                     dynamicBullets: true,
+                    // el: "#containerForBullets",
+                    // type: "bullets",
+                    // bulletClass: "swiper-custom-bullet",
+                    // bulletActiveClass: "swiper-custom-bullet-active",
+                    // clickable: true,
                 }}
                 modules={[Pagination]}
                 className="mySwiper"

@@ -5,6 +5,7 @@ import FindProperties from '../components/FindProperties';
 import Hero from '../components/Hero';
 import Nav2 from '../components/Nav2';
 import Navbar from '../components/Navbar';
+import NewsLetter from '../components/NewsLetter';
 import OurAgents from '../components/OurAgents';
 import OurProperty from '../components/OurProperty';
 import OurServices from '../components/OurServices';
@@ -26,6 +27,7 @@ const Home = () => {
             <FindProperties />
             <WorkingProcess />
             <OurAgents />
+            <NewsLetter />
         </div>
     );
 };
