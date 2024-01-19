@@ -8,6 +8,11 @@ import img5 from '../assets/our property img-5.png'
 import icon from '../assets/our property specs icon.png'
 import arrow from '../assets/our-property-arrow-orange.png'
 import btnIcon from '../assets/find more btn icon.png'
+import rent from '../assets/our-property-for-rent-orange.png'
+import sell from '../assets/our-property-for-sell.png'
+import buy from '../assets/our-property-for-buy.png'
+import loveYellow from '../assets/our-property-love-orange.png'
+
 const OurProperty = () => {
     const data = [
         {
@@ -16,10 +21,12 @@ const OurProperty = () => {
             name: "Ready Resort for Sell",
             desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
-            for: "For Rent",
+            // for: "For Rent",
             beds: 3,
             baths: 4,
-            parking: 1
+            parking: 1,
+            love: loveYellow,
+            for: rent
         },
         {
             id: 2,
@@ -27,10 +34,12 @@ const OurProperty = () => {
             name: "Ready Resort for Sell",
             desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
-            for: "For Rent",
+            // for: "For Rent",
             beds: 3,
             baths: 4,
-            parking: 1
+            parking: 1,
+            love: loveYellow,
+            for: sell
         },
         {
             id: 3,
@@ -38,10 +47,12 @@ const OurProperty = () => {
             name: "Ready Resort for Sell",
             desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
-            for: "For Rent",
+            // for: "For Rent",
             beds: 3,
             baths: 4,
-            parking: 1
+            parking: 1,
+            love: loveYellow,
+            for: buy
         },
         {
             id: 4,
@@ -49,10 +60,12 @@ const OurProperty = () => {
             name: "Ready Resort for Sell",
             desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
-            for: "For Rent",
+            // for: "For Rent",
             beds: 3,
             baths: 4,
-            parking: 1
+            parking: 1,
+            love: loveYellow,
+            for: sell
         },
         {
             id: 5,
@@ -60,10 +73,12 @@ const OurProperty = () => {
             name: "Ready Resort for Sell",
             desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
-            for: "For Rent",
+            // for: "For Rent",
             beds: 3,
             baths: 4,
-            parking: 1
+            parking: 1,
+            love: loveYellow,
+            for: rent
         },
         {
             id: 6,
@@ -71,27 +86,35 @@ const OurProperty = () => {
             name: "Ready Resort for Sell",
             desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
-            for: "For Rent",
+            // for: "For Rent",
             beds: 3,
             baths: 4,
-            parking: 1
+            parking: 1,
+            love: loveYellow,
+            for: buy
         },
     ]
     return (
         <div className='space-y-9 pb-20'>
-            <div>
+            <div className='space-y-3'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-[#010F58] text-sm font-bold text-center'>Our Property</h1>
                     <img src={underline} alt="" className='w-20 h-2 object-contain' />
                 </div>
-                <h1 className='text-3xl font-semibold text-center'>Our Explore Property</h1>
+                <h1 className='text-3xl font-bold text-center'>Our Explore Property</h1>
             </div>
 
             <div className='flex justify-center items-center'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {data.map((item) => (
-                        <div key={item.id} className='p-4 space-y-5 hover:bg-navy-blue group transition-all cursor-pointer'>
+                        <div key={item.id} className='p-4 space-y-3 hover:bg-navy-blue group transition-all cursor-pointer relative'>
                             <img src={item.image} alt="" className='w-72 h-56' />
+                            <div className='absolute top-0 left-4 flex justify-between'>
+                                <img src={item.for} alt="" className='w-20 h-20 object-contain' />
+                            </div>
+                            <div className='absolute top-4 right-8 flex justify-between'>
+                                <img src={item.love} alt="" className='w-10 h-10 object-contain' />
+                            </div>
                             <div className='flex items-center justify-between'>
                                 <h1 className='text-orange-500 font-bold group-hover:text-white/75'>{item.name}</h1>
                                 <div className='bg-orange-500 text-white px-3'>
