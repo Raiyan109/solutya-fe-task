@@ -3,10 +3,12 @@ import blue from '../assets/hero-left-blue.png'
 import orange from '../assets/hero-left-orange.png'
 import heroPlus from '../assets/hero-plus.png'
 import heroSearch from '../assets/hero-search.png'
+import rightArrow from '../assets/hero-arrow-right.png'
+import leftArrow from '../assets/hero-arrow-left.png'
 
 const Hero = () => {
     return (
-        <div className='flex items-center justify-between bg-navy-blue'>
+        <div className='flex items-center justify-between bg-navy-blue relative'>
             <div className='flex-1 relative'>
 
                 <img src={orange} alt="" className='absolute -top-[400px] left-44 z-0 h-[800px] w-[1200px]' />
@@ -118,6 +120,12 @@ const Hero = () => {
                 <img src={heroImg} alt=""
                 // className='w-[800px] h-[800px] object-contain' 
                 />
+            </div>
+            <div className='absolute left-5'>
+                <img src={leftArrow} alt="" />
+            </div>
+            <div className='absolute right-5'>
+                <img src={rightArrow} alt="" />
             </div>
         </div>
     );
