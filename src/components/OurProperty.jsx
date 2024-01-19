@@ -14,7 +14,7 @@ const OurProperty = () => {
             id: 1,
             image: img1,
             name: "Ready Resort for Sell",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
             for: "For Rent",
             beds: 3,
@@ -25,7 +25,7 @@ const OurProperty = () => {
             id: 2,
             image: img2,
             name: "Ready Resort for Sell",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
             for: "For Rent",
             beds: 3,
@@ -36,7 +36,7 @@ const OurProperty = () => {
             id: 3,
             image: img3,
             name: "Ready Resort for Sell",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
             for: "For Rent",
             beds: 3,
@@ -47,7 +47,7 @@ const OurProperty = () => {
             id: 4,
             image: img4,
             name: "Ready Resort for Sell",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
             for: "For Rent",
             beds: 3,
@@ -58,7 +58,7 @@ const OurProperty = () => {
             id: 5,
             image: img5,
             name: "Ready Resort for Sell",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
             for: "For Rent",
             beds: 3,
@@ -69,7 +69,7 @@ const OurProperty = () => {
             id: 6,
             image: img5,
             name: "Ready Resort for Sell",
-            desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            desc: "Lorem ipsum dolor sit amet consectetur amet consectetur, adipisicing elit.",
             price: 2525,
             for: "For Rent",
             beds: 3,
@@ -78,27 +78,29 @@ const OurProperty = () => {
         },
     ]
     return (
-        <div>
+        <div className='space-y-9 pb-20'>
             <div>
-                <h1 className='text-[#010F58] text-sm font-bold text-center'>Our Services</h1>
-                <img src={underline} alt="" className='' />
+                <div className='flex flex-col justify-center items-center'>
+                    <h1 className='text-[#010F58] text-sm font-bold text-center'>Our Property</h1>
+                    <img src={underline} alt="" className='w-20 h-2 object-contain' />
+                </div>
+                <h1 className='text-3xl font-semibold text-center'>Our Explore Property</h1>
             </div>
-            <h1 className='text-3xl font-semibold text-center'>Our Main Focus</h1>
 
             <div className='flex justify-center items-center'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {data.map((item) => (
-                        <div key={item.id} className='p-2 space-y-2'>
-                            <img src={item.image} alt="" />
+                        <div key={item.id} className='p-4 space-y-5 hover:bg-navy-blue group transition-all cursor-pointer'>
+                            <img src={item.image} alt="" className='w-72 h-56' />
                             <div className='flex items-center justify-between'>
-                                <h1 className='text-orange-500 font-bold'>{item.name}</h1>
+                                <h1 className='text-orange-500 font-bold group-hover:text-white/75'>{item.name}</h1>
                                 <div className='bg-orange-500 text-white px-3'>
                                     <h1>{item.price}</h1>
                                 </div>
                             </div>
-                            <p className='max-w-md text-xs text-gray-600'>{item.desc}</p>
+                            <p className='max-w-[250px] text-xs text-gray-600 group-hover:text-white/75'>{item.desc}</p>
                             <hr />
-                            <div className='flex items-center gap-3'>
+                            <div className='flex items-center gap-3 group-hover:text-white/75'>
                                 <div className='flex items-center gap-2'>
                                     <img src={icon} alt="" />
                                     <h1>Beds: {item.beds}</h1>
@@ -113,7 +115,7 @@ const OurProperty = () => {
                                 </div>
                             </div>
                             <hr />
-                            <div className='flex justify-between items-center'>
+                            <div className='flex justify-between items-center group-hover:text-white/75'>
                                 <button>View Details</button>
                                 <img src={arrow} alt="" />
                             </div>
