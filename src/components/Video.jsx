@@ -6,9 +6,9 @@ import cardImg3 from '../assets/Properties Sold.png'
 import cardImg4 from '../assets/Satisfied Clients.png'
 const Video = () => {
     return (
-        <div className=''>
+        <div className='relative'>
             <div
-                className="absolute inset-0  bg-transparent bg-gradient-to-r from-black/75 to-white/35 bg-blend-overlay"
+                className="absolute top-0 inset-0  bg-transparent bg-gradient-to-r from-black/75 to-white/35 bg-blend-overlay"
             ></div>
             <div className='bg-no-repeat bg-cover bg-center h-96 relative' style={{ backgroundImage: `url("${bgImg}")` }}>
                 <div className='flex justify-center items-center flex-col absolute top-20 left-80 lg:left-[700px]'>
