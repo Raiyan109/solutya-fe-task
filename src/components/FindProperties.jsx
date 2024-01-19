@@ -27,7 +27,7 @@ const FindProperties = () => {
                 // modules={[Pagination]}
                 className="mySwiper"
             >
-                <div className='ourServicesHeader'>
+                <div className='ourServicesHeader space-y-3'>
                     <div>
                         <h1 className='text-[#010F58] text-sm font-bold'>Find Properties</h1>
                         <img src={underline} alt="" className='' />
@@ -74,7 +74,7 @@ const FindProperties = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='group relative'>
-                        <img src={img1} alt="" />
+                        <img src={img2} alt="" />
                         <div className='bg-orange-600 absolute top-32 left-40 py-1 px-3 font-semibold text-white group-hover:hidden'>
                             Sydney
                         </div>
@@ -109,7 +109,7 @@ const FindProperties = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='group relative'>
-                        <img src={img1} alt="" />
+                        <img src={img3} alt="" />
                         <div className='bg-orange-600 absolute top-32 left-40 py-1 px-3 font-semibold text-white group-hover:hidden'>
                             Toronto
                         </div>

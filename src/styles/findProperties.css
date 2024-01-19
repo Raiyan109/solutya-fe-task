@@ -10,9 +10,9 @@
 
 }
 
-.swiper-slide:hover img {
+/* .swiper-slide:hover img {
     opacity: 0.3;
-}
+} */
 
 .swiper-slide:hover .middle {
     opacity: 1.5;
