@@ -1,6 +1,6 @@
 import locationImg from '../assets/location.png'
 import emailImg from '../assets/Email Icon.png'
-import phoneImg from '../assets/Ellipse 1.png'
+import phoneImg from '../assets/Phone.png'
 import fImg from '../assets/Facebook.png'
 import tImg from '../assets/Twitter.png'
 import lImg from '../assets/Linkdin.png'
