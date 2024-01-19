@@ -29,7 +29,7 @@ const Testimonials = () => {
         }
     ]
     return (
-        <div className='py-12 space-y-28'>
+        <div className='pt-20 pb-44  space-y-28'>
             <div className='space-y-5'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-sm font-bold text-center text-navy-blue'>Testimonials</h1>

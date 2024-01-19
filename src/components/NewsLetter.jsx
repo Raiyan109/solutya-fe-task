@@ -4,9 +4,12 @@ const NewsLetter = () => {
     return (
         <div className='relative'>
             <div
-                className="absolute inset-0  bg-transparent bg-gradient-to-r from-navy-blue to-navy-blue bg-blend-overlay"
+                className="absolute inset-0  bg-transparent bg-gradient-to-r from-navy-blue to-navy-blue bg-blend-overlay px-96"
             ></div>
-            <div className='bg-no-repeat bg-cover bg-center h-[500px] relative' style={{ backgroundImage: `url("${bg}")` }}>
+            <div className='bg-no-repeat bg-cover bg-center h-[500px] relative'
+                style={{ backgroundImage: `url("${bg}")` }}
+            >
+                {/* <img src={bg} alt="" className='relative' /> */}
                 <div className='absolute bottom-44 left-[700px] space-y-8 flex flex-col items-center justify-center'>
                     <h1 className='text-5xl font-semibold text-center text-white'>Subscribe our Newsletter</h1>
                     <p className='text-white/75 text-xs max-w-sm text-center'>Be the first one to know  about discounts, offers and events. Unsubscribe whenever you like.</p>
