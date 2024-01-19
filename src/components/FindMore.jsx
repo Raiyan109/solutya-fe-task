@@ -10,11 +10,16 @@ const FindMore = () => {
                 <img src={findMoreImg} alt="" className='w-[500px] h-[500px] object-contain' />
             </div>
             <div className='flex-1'>
-                <div className='space-y-6'>
-                    <h1 className='text-[#010F58] text-sm font-semibold'>Find More Choose</h1>
-                    <img src={underline} alt="" className='' />
-                    <h1 className='text-3xl font-semibold'>Why You Choose Our Kavinax Property</h1>
-                    <p className='text-xs text-black/80'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur </p>
+                <div className='space-y-5'>
+
+                    <div className='space-y-5'>
+                        <div className='flex flex-col '>
+                            <h1 className='text-sm font-bold  text-navy-blue'>Find More Choose</h1>
+                            <img src={underline} alt="" className='w-20 h-2 object-contain' />
+                        </div>
+                        <h1 className='text-3xl font-bold max-w-sm'>Why You Choose Our Kavinax Property</h1>
+                    </div>
+                    <p className='text-xs text-black/80 max-w-sm'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur </p>
                     <div className='space-y-2 grid grid-cols-2 gap-1'>
                         <div className='max-w-[200px]'>
                             <div className='flex items-center gap-2'>

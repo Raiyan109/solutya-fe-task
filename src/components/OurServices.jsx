@@ -22,12 +22,12 @@ const OurServices = () => {
                 // modules={[Pagination]}
                 className="mySwiper"
             >
-                <div className='ourServicesHeader'>
+                <div className='ourServicesHeader space-y-4 pb-10'>
                     <div>
                         <h1 className='text-[#010F58] text-sm font-bold'>Our Services</h1>
                         <img src={underline} alt="" className='' />
                     </div>
-                    <h1 className='text-3xl font-semibold'>Our Main Focus</h1>
+                    <h1 className='text-3xl font-bold'>Our Main Focus</h1>
                 </div>
                 <div className='ourServicesArrow'>
                     <OurServBtn />
@@ -66,7 +66,7 @@ const OurServices = () => {
 
                         </div>
                         <p className='text-xs text-gray-400 max-w-xs leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit.Cum sint repellendus ex neque harum aperiam quisquam, ducimus odio natus dolores magni ipsam dolorum.</p>
-                        <button className='text-sm bg-transparent border border-orange-400 text-orange-400'>Find a home</button>
+                        <button className='text-sm bg-transparent border border-orange-400 text-orange-400 '>Find a home</button>
                     </div>
                 </SwiperSlide>
 
