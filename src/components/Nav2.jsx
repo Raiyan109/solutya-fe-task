@@ -8,8 +8,8 @@ const Nav2 = () => {
     }
     return (
         <div>
-            <header className="p-4 bg-[#F8FAFA] text-gray-800">
-                <div className="container flex justify-between h-16 mx-auto relative">
+            <header className="p-4 px-20 bg-[#F8FAFA] text-gray-800">
+                <div className="flex justify-evenly h-16 relative">
                     <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
                         <img src={logoImg} alt="" className='' />
                     </a>
