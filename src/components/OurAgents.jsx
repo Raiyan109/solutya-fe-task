@@ -17,13 +17,13 @@ const OurAgents = () => {
             <div className='flex justify-center items-center'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
                     <div>
-                        <img src={img1} alt="" />
+                        <img src={img1} alt="" className='w-96 h-96 object-contain' />
                     </div>
                     <div>
-                        <img src={img2} alt="" />
+                        <img src={img2} alt="" className='w-96 h-96 object-contain' />
                     </div>
                     <div>
-                        <img src={img3} alt="" />
+                        <img src={img3} alt="" className='w-96 h-96 object-contain' />
                     </div>
                 </div>
             </div>

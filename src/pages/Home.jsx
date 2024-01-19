@@ -12,6 +12,7 @@ import NewsLetter from '../components/NewsLetter';
 import OurAgents from '../components/OurAgents';
 import OurProperty from '../components/OurProperty';
 import OurServices from '../components/OurServices';
+import Testimonials from '../components/Testimonials';
 import Video from '../components/Video';
 import WorkingProcess from '../components/WorkingProcess';
 
@@ -30,6 +31,7 @@ const Home = () => {
             <FindProperties />
             <WorkingProcess />
             <OurAgents />
+            <Testimonials />
             <NewsLetter />
             <Blogs />
             <Footer />

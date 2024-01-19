@@ -17,11 +17,11 @@ const WorkingProcess = () => {
                     </div>
                     <h1 className='text-3xl font-semibold text-center'>How Do We Work</h1>
                 </div>
-                <div className='grid grid-cols-2 lg:grid-cols-4 bg-transparent absolute bottom-20 left-[500px] py-5 px-3 z-10'>
-                    <img src={workingImg1} alt="" className='w-52 h-52 object-contain' />
-                    <img src={workingImg2} alt="" className='w-52 h-52 object-contain' />
-                    <img src={workingImg3} alt="" className='w-52 h-52 object-contain' />
-                    <img src={workingImg4} alt="" className='w-52 h-52 object-contain' />
+                <div className='grid grid-cols-2 lg:grid-cols-4 gap-8 bg-transparent absolute bottom-20 left-[500px] py-5 px-3 z-10'>
+                    <img src={workingImg1} alt="" className='w-56 h-56 object-contain' />
+                    <img src={workingImg2} alt="" className='w-56 h-56 object-contain' />
+                    <img src={workingImg3} alt="" className='w-56 h-56 object-contain' />
+                    <img src={workingImg4} alt="" className='w-56 h-56 object-contain' />
                 </div>
                 <div
                     className="absolute top-0 inset-0  bg-transparent bg-gradient-to-r from-indigo-800/80 to-indigo-800/80 bg-blend-overlay"
