@@ -34,24 +34,40 @@ const OurServices = () => {
                 </div>
                 <SwiperSlide>
                     <img src={img1} alt="" />
-                    <div className='space-y-3 py-2 px-3'>
-                        <div className='flex items-center gap-2'>
+                    <div className='space-y-5 py-5 px-3'>
+                        <div className='flex items-center justify-center gap-2'>
                             <img src={icon} alt="" className='ourServicesIcon' />
                             <h3 className='text-[#010F58] font-bold text-sm'>Buy a Property</h3>
 
                         </div>
-                        <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p className='text-xs text-gray-400 max-w-xs leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit.Cum sint repellendus ex neque harum aperiam quisquam, ducimus odio natus dolores magni ipsam dolorum.</p>
                         <button className='text-sm bg-transparent border border-orange-400 text-orange-400'>Find a home</button>
                     </div>
 
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={img2} alt="" />
+                    <div className='space-y-5 py-5 px-3'>
+                        <div className='flex items-center justify-center gap-2'>
+                            <img src={icon} alt="" className='ourServicesIcon' />
+                            <h3 className='text-[#010F58] font-bold text-sm'>Sell a Property</h3>
 
+                        </div>
+                        <p className='text-xs text-gray-400 max-w-xs leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit.Cum sint repellendus ex neque harum aperiam quisquam, ducimus odio natus dolores magni ipsam dolorum.</p>
+                        <button className='text-sm bg-transparent border border-orange-400 text-orange-400'>Find a home</button>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={img3} alt="" />
+                    <div className='space-y-5 py-5 px-3'>
+                        <div className='flex items-center justify-center gap-2'>
+                            <img src={icon} alt="" className='ourServicesIcon' />
+                            <h3 className='text-[#010F58] font-bold text-sm'>Rent a Property</h3>
 
+                        </div>
+                        <p className='text-xs text-gray-400 max-w-xs leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit.Cum sint repellendus ex neque harum aperiam quisquam, ducimus odio natus dolores magni ipsam dolorum.</p>
+                        <button className='text-sm bg-transparent border border-orange-400 text-orange-400'>Find a home</button>
+                    </div>
                 </SwiperSlide>
 
             </Swiper>
