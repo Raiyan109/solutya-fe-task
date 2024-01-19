@@ -13,10 +13,10 @@ const Hero = () => {
 
                 <img src={orange} alt="" className='absolute -top-[400px] left-44 z-0 h-[800px] w-[1200px]' />
                 <img src={blue} alt="" className='absolute -top-[400px] left-40 z-20 h-[800px] w-[1200px]' />
-                <div className='absolute z-20 left-72 -top-56 space-y-8'>
-                    <h1 className='text-5xl text-white max-w-sm leading-tight'>Discover More Suitable Property</h1>
+                <div className='absolute z-20 left-52 lg:left-72 -top-44 lg:-top-56 space-y-8'>
+                    <h1 className='text-4xl lg:text-5xl text-white max-w-sm leading-tight'>Discover More Suitable Property</h1>
                     <p className='text-sm text-white/95 max-w-md'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sit ad, accusantium mollitia nulla beatae officiis </p>
-                    <div>
+                    <div className='hidden lg:block'>
                         <div className='bg-orange-600 px-4 pb-3 flex gap-3 w-1/4'>
                             <div className='text-white py-1 '>Sell</div>
                             <div className='bg-white text-orange-600 rounded-b py-1 px-1 font-medium'>Rent</div>
@@ -121,10 +121,10 @@ const Hero = () => {
                 // className='w-[800px] h-[800px] object-contain' 
                 />
             </div>
-            <div className='absolute left-5'>
+            <div className='absolute left-5 hidden lg:block'>
                 <img src={leftArrow} alt="" />
             </div>
-            <div className='absolute right-5'>
+            <div className='absolute right-5 hidden lg:block'>
                 <img src={rightArrow} alt="" />
             </div>
         </div>

@@ -3,6 +3,7 @@ import icon from '../assets/news-icon.png'
 const NewsLetter = () => {
     return (
         <div className='relative'>
+
             <div
                 className="absolute inset-0  bg-transparent bg-gradient-to-r from-navy-blue to-navy-blue bg-blend-overlay px-96"
             ></div>
@@ -10,6 +11,9 @@ const NewsLetter = () => {
                 style={{ backgroundImage: `url("${bg}")` }}
             >
                 {/* <img src={bg} alt="" className='relative' /> */}
+                <div className='p-5 bg-navy-blue rounded-full absolute -top-10 left-[900px] border-s-4 border-e-4 border-b-4'>
+                    <img src={icon} alt="" className='w-10 h-10 object-contain' />
+                </div>
                 <div className='absolute bottom-44 left-[700px] space-y-8 flex flex-col items-center justify-center'>
                     <h1 className='text-5xl font-semibold text-center text-white'>Subscribe our Newsletter</h1>
                     <p className='text-white/75 text-xs max-w-sm text-center'>Be the first one to know  about discounts, offers and events. Unsubscribe whenever you like.</p>
