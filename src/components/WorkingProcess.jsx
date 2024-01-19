@@ -6,25 +6,26 @@ import workingImg4 from '../assets/Make Appointment.png'
 import underline from '../assets/head underline.png'
 const WorkingProcess = () => {
     return (
-        <div className='relative'>
-            <div
-                className="absolute inset-0  bg-transparent bg-gradient-to-r from-black/75 to-white/35 bg-blend-overlay"
-            ></div>
+        <div className='py-10'>
             <div className='bg-no-repeat bg-cover bg-center h-[500px] relative' style={{ backgroundImage: `url("${bgImg}")` }}>
-                <div className='absolute bottom-96 left-[800px]'>
+                <div className='absolute bottom-96 left-[800px] z-10 text-white space-y-3'>
                     <div>
-                        <h1 className='text-[#010F58] text-sm font-bold text-center'>Our Services</h1>
-                        <img src={underline} alt="" className='text-center' />
+                        <div className='flex flex-col justify-center items-center'>
+                            <h1 className='text-sm font-bold text-center'>Working Process</h1>
+                            <img src={underline} alt="" className='w-20 h-2 object-contain' />
+                        </div>
                     </div>
-                    <h1 className='text-3xl font-semibold text-center'>Our Main Focus</h1>
+                    <h1 className='text-3xl font-semibold text-center'>How Do We Work</h1>
                 </div>
-                <div className='grid grid-cols-2 lg:grid-cols-4 bg-transparent absolute bottom-20 left-[500px] py-5 px-3'>
+                <div className='grid grid-cols-2 lg:grid-cols-4 bg-transparent absolute bottom-20 left-[500px] py-5 px-3 z-10'>
                     <img src={workingImg1} alt="" className='w-52 h-52 object-contain' />
                     <img src={workingImg2} alt="" className='w-52 h-52 object-contain' />
                     <img src={workingImg3} alt="" className='w-52 h-52 object-contain' />
                     <img src={workingImg4} alt="" className='w-52 h-52 object-contain' />
                 </div>
-
+                <div
+                    className="absolute top-0 inset-0  bg-transparent bg-gradient-to-r from-indigo-800/80 to-indigo-800/80 bg-blend-overlay"
+                ></div>
             </div>
         </div>
     );
