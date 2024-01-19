@@ -1,7 +1,3 @@
-import { BiSearch } from 'react-icons/bi'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { BsFillPersonFill } from 'react-icons/bs'
-import { Link } from 'react-router-dom'
 import locationImg from '../assets/location.png'
 import emailImg from '../assets/Email Icon.png'
 import phoneImg from '../assets/Ellipse 1.png'
