@@ -1,13 +1,13 @@
 import { useState } from "react";
 import leftArr from '../assets/LHS Arrow Icon.png'
 import rightArr from '../assets/RHS arrow Icon.png'
-const slideStyles = {
-    width: "100%",
-    height: "100%",
-    borderRadius: "10px",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-};
+// const slideStyles = {
+//     width: "100%",
+//     height: "100%",
+//     borderRadius: "10px",
+//     backgroundSize: "cover",
+//     backgroundPosition: "center",
+// };
 
 const rightArrowStyles = {
     position: "absolute",
@@ -33,23 +33,26 @@ const sliderStyles = {
 };
 
 
+// eslint-disable-next-line react/prop-types
 const BrowseSlider = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
+        // eslint-disable-next-line react/prop-types
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     };
     const goToNext = () => {
+        // eslint-disable-next-line react/prop-types
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
 
-    const slideStylesWidthBackground = {
-        // ...slideStyles,
-        // backgroundImage: `url(${slides[currentIndex].image})`,
-    };
+    // const slideStylesWidthBackground = {
+    //     ...slideStyles,
+    //     backgroundImage: `url(${slides[currentIndex].image})`,
+    // };
     return (
         <div style={sliderStyles}>
             <div>
@@ -63,7 +66,7 @@ const BrowseSlider = ({ slides }) => {
             <div className="absolute -top-20">
                 <h1 className="text-4xl text-navy-blue font-bold">Browse By Categories</h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
                 <div
                     // style={slideStylesWidthBackground} 
                     className="flex gap-3 items-center bg-gray-50"

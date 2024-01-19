@@ -8,7 +8,7 @@ import leftArrow from '../assets/hero-arrow-left.png'
 
 const Hero = () => {
     return (
-        <div className='flex items-center justify-between bg-navy-blue relative'>
+        <div className='flex items-center justify-between bg-navy-blue relative mb-10'>
             <div className='flex-1 relative'>
 
                 <img src={orange} alt="" className='absolute -top-[400px] left-44 z-0 h-[800px] w-[1200px]' />
@@ -122,10 +122,10 @@ const Hero = () => {
                 />
             </div>
             <div className='absolute left-5 hidden lg:block'>
-                <img src={leftArrow} alt="" />
+                <img src={leftArrow} alt="" className='w-16 h-16' />
             </div>
             <div className='absolute right-5 hidden lg:block'>
-                <img src={rightArrow} alt="" />
+                <img src={rightArrow} alt="" className='w-16 h-16' />
             </div>
         </div>
     );
