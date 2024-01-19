@@ -6,21 +6,21 @@ import cardImg3 from '../assets/Properties Sold.png'
 import cardImg4 from '../assets/Satisfied Clients.png'
 const Video = () => {
     return (
-        <div className='relative'>
-            <div
-                className="absolute top-0 inset-0  bg-transparent bg-gradient-to-r from-black/75 to-white/35 bg-blend-overlay"
-            ></div>
-            <div className='bg-no-repeat bg-cover bg-center h-96 relative' style={{ backgroundImage: `url("${bgImg}")` }}>
-                <div className='flex justify-center items-center flex-col absolute top-20 left-80 lg:left-[700px]'>
+        <div className='py-10'>
+            <div className='bg-no-repeat bg-cover bg-center h-[500px] relative ' style={{ backgroundImage: `url("${bgImg}")` }}>
+                <div className='flex justify-center items-center flex-col absolute top-20 left-80 lg:left-[700px] z-10'>
                     <img src={playImg} alt="" />
-                    <h1 className='text-4xl text-white'>Watch Our Video Tutorial</h1>
+                    <h1 className='text-4xl text-white font-semibold'>Watch Our Video Tutorial</h1>
                 </div>
-                <div className='grid grid-cols-2 lg:grid-cols-4 bg-white absolute -bottom-32 left-[500px] py-5 px-3'>
+                <div className='grid grid-cols-2 lg:grid-cols-4 bg-white absolute -bottom-32 left-[430px] py-9 px-16 z-10 shadow-lg'>
                     <img src={cardImg1} alt="" className='w-52 h-52 object-contain' />
                     <img src={cardImg2} alt="" className='w-52 h-52 object-contain' />
                     <img src={cardImg3} alt="" className='w-52 h-52 object-contain' />
                     <img src={cardImg4} alt="" className='w-52 h-52 object-contain' />
                 </div>
+                <div
+                    className="absolute top-0 inset-0  bg-transparent bg-gradient-to-r from-indigo-800/60 to-indigo-800/60 bg-blend-overlay"
+                ></div>
             </div>
         </div>
     );
