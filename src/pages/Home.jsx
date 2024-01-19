@@ -4,6 +4,7 @@ import Browse from '../components/Browse';
 import FindMore from '../components/FindMore';
 import FindProperties from '../components/FindProperties';
 import Footer from '../components/Footer';
+import Footer2 from '../components/Footer2';
 import Hero from '../components/Hero';
 import Nav2 from '../components/Nav2';
 import Navbar from '../components/Navbar';
@@ -32,6 +33,7 @@ const Home = () => {
             <NewsLetter />
             <Blogs />
             <Footer />
+            <Footer2 />
         </div>
     );
 };
