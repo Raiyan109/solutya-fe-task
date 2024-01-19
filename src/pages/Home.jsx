@@ -1,4 +1,5 @@
 import About from '../components/About';
+import Blogs from '../components/Blogs';
 import Browse from '../components/Browse';
 import FindMore from '../components/FindMore';
 import FindProperties from '../components/FindProperties';
@@ -28,6 +29,7 @@ const Home = () => {
             <WorkingProcess />
             <OurAgents />
             <NewsLetter />
+            <Blogs />
         </div>
     );
 };
