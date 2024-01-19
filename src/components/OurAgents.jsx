@@ -2,44 +2,34 @@ import underline from '../assets/head underline.png'
 import img1 from '../assets/agent-1.png'
 import img2 from '../assets/agent-2.png'
 import img3 from '../assets/agent-3.png'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-import '../styles/ourAgents.css'
+
 
 const OurAgents = () => {
     return (
-        <div>
-            <div>
-                <h1 className='text-[#010F58] text-sm font-bold text-center'>Our Agents</h1>
-                <img src={underline} alt="" className='' />
+        <div className='py-12 space-y-12'>
+            <div className='space-y-5'>
+                <div className='flex flex-col justify-center items-center'>
+                    <h1 className='text-sm font-bold text-center text-navy-blue'>Our Agents</h1>
+                    <img src={underline} alt="" className='w-20 h-2 object-contain' />
+                </div>
+                <h1 className='text-3xl font-bold text-center'>Meet Our Agents</h1>
             </div>
-            <h1 className='text-3xl font-semibold text-center'>Meet Our Agents</h1>
-            <div id="containerForBullets"></div>
-            <Swiper
-                pagination={{
-                    dynamicBullets: true,
-                    // el: "#containerForBullets",
-                    // type: "bullets",
-                    // bulletClass: "swiper-custom-bullet",
-                    // bulletActiveClass: "swiper-custom-bullet-active",
-                    // clickable: true,
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
-            >
-                <SwiperSlide>
-                    <img src={img1} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={img2} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={img3} alt="" />
-                </SwiperSlide>
+            <div className='flex justify-center items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
+                    <div>
+                        <img src={img1} alt="" />
+                    </div>
+                    <div>
+                        <img src={img2} alt="" />
+                    </div>
+                    <div>
+                        <img src={img3} alt="" />
+                    </div>
+                </div>
+            </div>
+            <div>
 
-            </Swiper>
+            </div>
         </div>
     );
 };
